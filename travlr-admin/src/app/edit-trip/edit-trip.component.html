@@ -1,5 +1,5 @@
 <p>
-  trip-card works!
+  edit-trip works!
 </p>
 <app-trip-card [trip]="trip"
 class="card-deck mt-2"></app-trip-card>
@@ -17,4 +17,7 @@ class="card-img-top">
   currency:'USD':'symbol' }} per person</p>
   <p class="card-text" [innerHTML]="trip.description"></p>
   </div>
+  <div>
+    <button (click)="editTrip(trip)" class ="btn btn-info">Edit</button>
   </div>
+</div>
